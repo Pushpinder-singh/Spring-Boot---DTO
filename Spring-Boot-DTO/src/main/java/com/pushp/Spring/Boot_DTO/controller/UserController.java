@@ -10,6 +10,7 @@ public class UserController {
     @Autowired
     private UserService userService;
 
+    // reflect the data on browser after fethcing from JPA repo
     @GetMapping("/users-office-location")
     public List<UserOfficeLocationDTO> getAllUsersLocation(){
         return userService.getAllUsersLocation();
